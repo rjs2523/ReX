@@ -1,0 +1,97 @@
+<!Doctype HTML>
+<HTML>
+  <Head>
+    <meta charset="utf=8">
+    <style>
+      div {
+        text-align:center;
+      }
+      h1 {
+        text-align:center;
+        font-size:100px;
+      }
+      h2 {
+        text-align:center;
+        color:white;
+      }
+      ol {
+        color:white;font-size:20px
+      }
+      body {
+        background-color: #242526;
+      }
+      a:link {
+        color: black;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+        color:#ff0ff0;
+      }
+      a:visited {
+        text-decoration: overline;
+        color:#f00f00;
+      }
+      p {
+        color:white;
+      }
+      img:hover {
+        width:480;
+        Height: 300;
+        transform:scale(1.5, 1.5);
+        transition: transform.5s;
+      }
+    </style>
+    <Title>WEB Main</title>
+  </Head>
+<body>
+  <a style="font-size:100px;" href="index.html">
+    <h1>HAXM </h1>
+  </a>
+  <ol>
+    <li><a href="1html.html">HTML</a></li>
+    <li><a href="2css.html">CSS</a></li>
+    <li><a href="3javascript.html">Javascript</a></li>
+  </ol>
+  <h2>Intel® Hardware Accelerated Execution Manager (Intel® HAXM)</h2>
+<p>커널부터 시작해서 SDK(Software Development Kit, 소프트웨어 개발 툴)까지 몽땅 다 무료로 풀려 있으며 프로그램을 만들어서 실제 폰과 비슷한 환경에서 돌려볼 수 있는 에뮬레이터(AVD - Android Virtual Device)도 당연히 공개되어 있다.[3] 자신이 타겟 플랫폼의 H/W 구조를 다 이해하고 있고 관련 프로그래밍이 가능하고 개발 툴을 가지고 있다는 전제하에 원한다면 Android를 포팅 가능한 핸드폰을 한 대 구입해서 내부를 통째로 뜯어고쳐 완벽하게 자신만의 단말기를 만들어 버리는 것도 가능하다. 다만 일부 기종을 제외한 피처폰들은 Android의 커널을 구성하는 Linux 커널을 구동시키기 위한 최소한의 하드웨어 사양을 충족하지 못하므로 Android 구동은 어렵다.[4] 한때 Google이 Nokia 피처폰에 Android를 구동하는 영상을 유출했었다.<br>올해 초 오픈 소스 코드에서 피처폰용 Chrome을 개발 중이라는 증거를 발견했고 이것이 터치스크린이 없는 피처폰용 Chrome이라는 것이 알려졌다. 이 영상에서는 Android 8.1.0을 기반으로 하고 Google Asssistant, Google 지도를 구동하며 Play 스토어는 없다. 하지만 저번주 피처폰용 Chrome을 폐기하는 것 같다는 소식이 들려왔다. 이에 피처폰용 Android의 운명이 어떻게 될지 모른다. 다만 경쟁 상대인 Kai OS가 피처폰 시장에서 재미를 본다면 Google도 가만히 있지는 않을듯<br>
+오픈 소스로 풀어버린 만큼 많은 제조사들에 의해 오만가지 기종이 다 나왔으며 그 덕분에 시장 점유율이 높은 편이다. 한 예로 2013년 2분기에는 시장 점유율이 81%로 iOS(14.2%)를 큰 격차로 따돌렸다. <br>이미 명실상부한 시장 지배적인 모바일 OS의 위치에 올라섰다. Google 코리아가 공개한 자료에 의하면 현재 Android 사용자의 수는 10억명 정도라고. 전체 인구 7분의 1이 Android를 사용하고 있다고 볼 수 있다.</p><br><p style="text-align:center;font-size:20px;"><u><strong>이것은 그냥 내가 강조 표시를 테스트 하고 싶어서 넣어본 글이다 ㅋㅋ</strong></u></p><br>
+<p>
+기본적으로는 ARM 프로세서로 포팅되어 있으며 MIPS, Power Architecture, x86-64로도 포팅이 되어 있다. 지원하는 언어는 커널 쪽은 C, 몇몇 라이브러리는 C++, 그리고 UI 및 응용 소프트웨어는 Java로 되어있다.[5] 가상 머신은 Java VM이 아니라 Google에서 자체 개발한 Dalvik VM을 사용한다.[6] 이후 Android 4.4 Kitkat부터는 ART가 개발자용으로 처음 도입되었다. AOSP 4.4 ART 기본값 기사 Android 5.0 Lollipop에서는 정식으로 ART모드가 기본으로 탑재되어 Dalvik을 완전히 대체하였다.[7]<br><br>
+
+Linux 커널을 기반으로 한 OS이고 Java 가상 머신을 사용하여 성능은 좀 떨어질지라도[8] 호환성 하나는 막강하여[9] ARM 코어 프로세서뿐만 아니라 다른 플랫폼으로도 포팅이 가능해 스마트폰, PMP는 물론이고 태블릿 컴퓨터, 텔레비전 심지어 PC에도 포팅이 가능하다. 하지만 Google Android 인증 조건에 GPS, 카메라 등의 조건이 반드시 필요하기 때문에 사실상 스마트폰이나 일부 태블릿 컴퓨터 그리고 디지털 카메라[10] 이외에는 인증을 받기가 어렵다.[11] 사실 Android는 Linux 커널 이외에 다른 커널에서도 동작이 가능하다고 한다. Windows 커널 기반으로 동작하는 Windroye(구 WindowsAndroid)가 있다.</p>
+<p>asdfafssfadaewrfgszgbszgxdr bfrrfthrdthrfg <a href="https://www.naver.com/" target="_top" title="상세 설명">처음으로 한국어를 테스트 하겠음</a> <a href="photo.jpg">가나다라마바사</a> <a href="https://i.imgur.com/IskAzqA.jpg" title="테스트"> 다운로드 테스트 </a>
+  <strong>tdxthnrfgh</strong><br></p>
+<div>
+  <p><iframe width="640" height="360" src="https://www.youtube.com/embed/r9LTuVFaJsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+  <a href="https://www.naver.com/">
+    <img src="Photo.jpg" width="50%" Height="50%">
+  </a>
+</div>
+  <br><br>
+<p style="margin-top:50px"><span style="color:blue"> BLueBLUEBLUEblUE</span> My names.</p>
+<ol>
+  <li>DongGeon Kim</li>
+  <li>Sujung Kang</li>
+  <li>Donggeon and Sjujng</li>
+</ol>
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://rex2523.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</body>
